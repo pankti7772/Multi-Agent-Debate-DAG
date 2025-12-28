@@ -1,0 +1,21 @@
+// Multi-Agent Debate DAG
+digraph {
+	rankdir=TB size="8,5"
+	START [label=Start shape=circle]
+	user_input [label="User Input" shape=box]
+	controller [label=Controller shape=diamond]
+	agent_a [label="Agent A (Scientist)" shape=box]
+	agent_b [label="Agent B (Philosopher)" shape=box]
+	memory [label=Memory shape=box]
+	judge [label=Judge shape=box]
+	END [label=End shape=circle]
+	START -> user_input
+	user_input -> controller
+	controller -> agent_a [label="scientist turn"]
+	controller -> agent_b [label="philosopher turn"]
+	controller -> judge [label="debate complete"]
+	agent_a -> memory
+	agent_b -> memory
+	memory -> controller
+	judge -> END
+}

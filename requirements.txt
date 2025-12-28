@@ -1,0 +1,10 @@
+langchain>=0.1.0
+langgraph>=0.0.15
+python-dotenv>=1.0.0
+groq>=0.3.0
+pydot>=1.4.2
+graphviz>=0.20.1
+# mermaid-cli should be installed via npm if needed for rendering, 
+# but langgraph handles text generation without it.
+fpdf2
+google-generativeai
