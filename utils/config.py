@@ -21,7 +21,7 @@ class Config:
     # Runtime Configuration
     SEED = None
     LOG_PATH = "logs/debate_log.jsonl"
-    TOPIC = "Is AI sentient?"
+    TOPIC = "Should AI be regulated like medicine?"
 
     @classmethod
     def update(cls, **kwargs):
